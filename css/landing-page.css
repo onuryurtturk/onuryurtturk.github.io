@@ -21,8 +21,11 @@ h6 {
     font-weight: 700;
 }
 
+#img_project
+{
+    margin-top: 300px;
+}
 .vertical-align {
-    display: flex;
     align-items: center;
 }
 
