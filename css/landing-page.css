@@ -21,6 +21,17 @@ h6 {
     font-weight: 700;
 }
 
+#img_min
+{
+    margin-top: 100px;
+}
+
+
+#img_less
+{
+    margin-top: 200px;
+}
+
 #img_project
 {
     margin-top: 300px;
