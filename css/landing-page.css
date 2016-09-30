@@ -30,6 +30,25 @@ iframe {
     width: 50vw;
 }
 
+
+h1 {
+  font-size: 5.9vw;
+}
+h2 {
+  font-size: 3.0vh;
+}
+h3 {
+  font-size: 2.0vh;
+}
+h4 {
+  font-size: 1.0vh;
+}
+
+
+p {
+  font-size: 2vmin;
+}
+
 img {
     width: 100%;
 }
