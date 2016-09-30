@@ -30,6 +30,10 @@ iframe {
     width: 50vw;
 }
 
+img {
+    width: 100%;
+}
+
 
 #frame_margin
 {
