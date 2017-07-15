@@ -1,350 +1,491 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Onur Yurttürk - Personal Page</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		 <!---- animated-css ---->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+		<!---- animated-css ---->
+		  <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<div class="bg">
+		<!----- start-header---->
+			<div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#"><img src="images/logo.png" title="dreams" /></a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li><a href="#home" class="scroll">Home</a></li>
+								<li class="active"><a href="#services" class="scroll">My Skills</a></li>
+								<li><a href="#port" class="scroll">Portfolio</a></li>
+								<li><a href="https://onuryurtturk.wordpress.com" target="_blank">Blog</a></li>
+								<li><a href="#contact" class="scroll">Contact</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!---- banner ---->
+			<div class="banner wow fadeIn" data-wow-delay="0.5s">
+				<div class="container">
+					<div class="banner-info text-center">
+						<h1>Onur Yurttürk</h1><br />
+						<span> </span>
+						<p>Computer Engineer - Mobile Application Developer</p>
 
-<head>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!---- banner ---->
+			<!--- services --->
+			<div id="services" class="services">
+				<div class="container">
+					<div class="service-head text-center">
+						<h2>My Skills</h2>
+						<span> </span>
+					</div>
+					<!--- services-grids --->
+					<div class="services-grids text-center">
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+								<span class="service-icon1"> </span>
+								<h3><a href="#">Tools & Concepts</a></h3>
+								<p> •Gradle •Maven •SVN •TFS •Git •Android SDK •IOS SDK
+								     •Trello •BaseCamp •Asana •Github •Bitbucket
+								     •Scrum & Agile Methodologies
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+								<span class="service-icon2"> </span>
+								<h3><a href="#">Programming</a></h3>
+								<p> •Kotlin •Java •Swift •C •C++ •C# •JavaScript
+								     •Framework7 •Cordova •CSS •HTML •Matlab
+								     •Understanding of modern Android Development •Familiar Gradle
+								     •OOP •Design Patterns •MVC •MVVM-Beginner •Google UI/UX guidelines
+								     •SQLite •Realm •SOAP •REST •XML •JSON
+								 </p>
+						   </div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+								<span class="service-icon3"> </span>
+								<h3><a href="#">OS & Softwares</a></h3>
+								<p> •MacOS •Linux •Windows •Android Studio •Eclipse •XCode •MS Visual Studio
+								     •Matlab •MSSQL •SQLite •Genymotion •Sublime
+								     •SourceTree •Photoshop
+								     •Fireworks
+								 </p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!--- services-grids --->
+				</div>
+			</div>
+			<!--- services --->
+			<div class="clearfix"> </div>
+			<!--- Other Expertise ---->
+			<div id="port" class="expertise">
+				<div class="expertice-grids">
+					<div class="col-md-8 expertice-left-grid wow fadeInLeft" data-wow-delay="0.4s">
+						<div class="expertise-head">
+							<h3>Managerial Experiments</h3>
+							<p>During my 4 years bachelor education I have attended to organisations which were related IT fields and some of them organized by my team. </p>
+						</div>
+						<div class="expertise-left-inner-grids">
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<span class="e-icon3"> </span>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>President</h4>
+									<p>@PAU Free Software Community</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<span class="e-icon3"> </span>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Founder Member</h4>
+									<p>@PAU Information Technologies Community</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<span class="e-icon3"> </span>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Instructor</h4>
+									<p>@C Programming & Android Courses</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<span class="e-icon3"> </span>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Organiser</h4>
+									<p>@PAU Search & Share Groups (SSG)</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<a class="leran-more" href="#">Learn more</a>
+					</div>
+					<div class="col-md-4 expertice-right-grid wow fadeInRight" data-wow-delay="0.4s">
+						
+					</div>
+					<div class="clearfix"> </div> 
+				</div>
+			</div>
+			<!--- Other Expertise ---->
+			<!--- portfolio ---->
+			<div class="portfolio">
+				<div class="portfolio-top">
+					<div class="col-md-8">
+						<div class="portfolio-top-left wow fadeInLeft" data-wow-delay="0.4s">
+							<h3>More about me & Portfolio</h3>
+							<p>Beside studying, during 3 years, I worked part time as Mobile Application Developer with research and development company in Pamukkale University Technopark. This combination of studying and working has given me both the theoretical and practical knowledge needed. Also, I worked as freelance and participated in some projects</p>
+						<div class="portfolio-top-left-grids">
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<span class="p-icon1"> </span>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>1st Place Prize at GDG Hackingfest 2015</h5>
+										<p> Achieved 1st place prize at Google Developer Groups (GDG) Hackingfest 2015 with AcilSaglik Mobile Application
+										which is developed in 24 hours.</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<span class="p-icon2"> </span>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>Honour Student</h5>
+										<p>Considered as a honour student at all seasons by Pamukkale University Computer Engineering Department </p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-top-right-inner wow fadeInRight" data-wow-delay="0.4s">
+						<div class="portfolio-top-right">
+							
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					<!---- portfolio-works ---->
+					<div class="portfolio-works">
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p1.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>Acil Sağlık</h4>
+								<p>Acil Sağlık shows the locations of open pharmacies, drugstores and hospitals on the map while drawing the closest path. Acil Sağlık provides the easiest and fastest access to health related services when you're in need.</p>
+								<a class="leran-more" href="#">Google Play</a>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p2.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>Anlık Haber</h4>
+								<p>Lightweight news app! Lightweight news app! Lightweight news app! Lightweight news app!</p>
+								<a class="leran-more" href="#">Google Play</a>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p3.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>CottonBox App</h4>
+								<p>Heart touching product catalog with numerous product photos, informations and categories. Enjoy with our products wherever you are after downloading the catalog to your smartphone.</p>
+								<a class="leran-more" href="#">Google Play</a>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p4.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>CottonBox App</h4>
+								<p>Heart touching product catalog with numerous product photos, informations and categories. Enjoy with our products wherever you are after downloading the catalog to your smartphone.</p>
+								<a class="leran-more" href="#">Google Play</a>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p5.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>Project title</h4>
+								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p6.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>Project title</h4>
+								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+							</div>
+						</div>
+							<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p8.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>/ * Private Project * /</h4>
+								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+							</div>
+						</div>
+							<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p7.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>LoveWire</h4>
+								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+							</div>
+						</div>
+							<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p9.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>Denizli Atatürk Stadium ScoreBoard Project</h4>
+								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+							</div>
+						</div>
+							<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p12.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>Konyaalti Kültür</h4>
+								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+							</div>
+						</div>
+							<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p11.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>BlindAnswer</h4>
+								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+							</div>
+						</div>
+							<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p10.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>CRR Concert Hall</h4>
+								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+							</div>
+						</div>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <script language="javascript" type="text/javascript">
-    function resizeIframe(obj) {
-        obj.style.height = (obj.contentWindow.document.body.scrollHeight)+ 'px';
-        obj.style.width = (obj.contentWindow.document.body.width)+ 'px';
-    }
-    </script>
+						<div class="clearfix"> </div>
+					</div>
+					<!---- portfolio-works ---->
+				</div>
+			</div>
+			<!--- portfolio ---->
+			<!---- about ---->
+			<!---start-about---->
+		<div class="about">
+			<div class="wrap"> 
+				<div class="about-head">
+					<h1>Work Experience</h1>
+					<span> </span>
+				</div>
+				<!---start-about-time-line---->
+				<div class="about-time-line">
+					<li>
+							<div class="cbp_tmicon img1"> </div>
+							<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s">
+								<h2>12/2013 - 06/2014</h2>
+								<p>Mobile Application Developer</p>
+								<p>Designing information system reports with Jasper Reports. (Akhmet Yassawi University Information Systems) (Kazakhistan) Contributing to mobile application projects with team.</p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon1 img2"> </div>
+							<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s">
+								<h2>06/2014 - 09/2014</h2>
+								<p>- Intern - Mobile Application Developer</p>
+								<p>Designing & developing mobile applications. Cemal Resit Rey Concert Hall Android Application & Denizli Otobus Saatleri Android Application.</p>
+							</div>
+					</li><br />
+					<li>
+							<div class="cbp_tmicon2 img3"> </div>
+							<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s">
+								<h2>03/2015 - 06/2016</h2>
+								<p>Mobile Application Developer</p>
+								<p>Head of Android Application Development. Analysing project requirements & designing applications.
+									( HesapBurada, PhyrgianWay, KonyaaltiKultur, AcilSaglik, CottonBox, BlindAnswer, SchoolSafety )</p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon3 img4"> </div>
+							<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s">
+								<h2>10/2016 - Current</h2>
+								<p>Mobile Application Specialist</p>
+								<p>Research & Development for EnRoute Panorama Mobile Sales and Distribution Management Solution.</p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon4 img5"> </div>
+					</li>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+				</div>
+				<!---//End-about-time-line---->
+			<!---- about ---->
+		</div>
+		
+			<!---- team --->
+			<!---- contact --->
+			<div id="contact" class="contact">
+				<div class="container">
+				<div class="contact-grids">
+					<div class="col-md-6">
+						<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
+							<h3>Contact Me</h3>
+							<label>Don't be shy, drop me an email and say hello! :)</label>
+							<div class="contact-left-grids">
+								<div class="col-md-6">
+									<div class="contact-left-grid">
+										<p><span class="c-mobi"> </span>--<p>
+										<p><span class="c-twitter"> </span><a href="#">@oyurtturk</a></p>
+										<p><span class="c-pluse"> </span><a href="#">plus.com/onuryurtturk</a></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="contact-right-grid">
+										<p><span class="c-msg"> </span><a href="mailto:onuryurtturk@gmail.com">onuryurtturk@gmail.com</a></p>
+										<p><span class="c-face"> </span><a href="facebook.com/onuryurtturk">onuryurtturk</a></p>
+										<p><span class="c-pin"> </span><a href="pinterest.com/onuryurtturk">onuryurtturk</a></p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="contact-right wow fadeInLeft" data-wow-delay="0.4s">
+							<form>
+								<input type="text" class="text" value="Name..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name...';}">
+					 			<input type="text" class="text" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}">
+					 	 		<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
+								<input class="wow shake" data-wow-delay="0.3s" type="submit" value="Send Message" />
+							</form>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!--- copy-right ---->
+				<div class="copy-right text-center">
+					<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+					<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+				<!--- copy-right ---->
+			</div>
+			</div>
+			<!---- contact --->
+		</div>
+	</body>
+</html>
 
-    <script type="text/javascript">
-    function calcHeight()
-    {
-    //find the height of the internal page
-    var the_height=
-    document.getElementById('the_iframe').contentWindow.
-    document.body.scrollHeight * 4;
-
-    //change the height of the iframe
-    document.getElementById('the_iframe').height=
-    the_height;
-}
-</script>
-
-<title>Onur Yurttürk - Personal Page</title>
-
-<!-- Bootstrap Core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom CSS -->
-<link href="css/landing-page.css" rel="stylesheet">
-
-<!-- Custom Fonts -->
-<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-    </head>
-
-    <body oncontextmenu="return false">
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-            <div class="container topnav">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand topnav" href="#">Onur Yurttürk</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#about">About Me</a>
-                        </li>
-                        <li>
-                            <a href="#services">My References</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
-
-
-        <!-- Header -->
-        <a name="about"></a>
-        <div class="intro-header">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="intro-message">
-                            <h1>Onur Yurttürk</h1>
-                            <h2>Computer Engineer</h2>
-                            <h3>Software Developer</h3>
-                            <h4>' Mobile Application Specialist '</h4>
-                            <hr class="intro-divider">
-                            <ul class="list-inline intro-social-buttons">
-                                <li>
-                                    <a href="https://twitter.com/oyurtturk" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/onuryurtturk" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                                </li>
-                                <li>
-                                    <a href="https://tr.linkedin.com/in/onuryurtturk" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                                </li>
-                                <li>
-                                    <a href="https://onuryurtturk.wordpress.com" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-book fa-fw"></i> <span class="network-name">MyBlog</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- /.container -->
-
-        </div>
-        <!-- /.intro-header -->
-
-        <!-- Page Content -->
-
-        <a  name="services"></a>
-        <div class="content-section-a">
-
-            <div class="container">
-                <div class="row vertical-align" >
-                    <div class="col-md-5 col-lg-offset-0 col-sm-6"  >
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading" font-family: "Arial">🚨 Acil Sağlık Mobile App</h2>
-                        <p class="lead" font-family: "Arial"> Need healthcare? No problem! Acil Sağlık is now with you in your smart phone…<br><br>Acil Sağlık shows the locations of open pharmacies, drugstores and hospitals on the map while drawing the closest path . Acil Sağlık provides the easiest and fastest access to health related services when you're in need.<h3 class="section-heading">- Drugstores</h3>The wide network of drugstore web is integrated to Acil Sağlık app so whenever you search for a drugstore you can easily find the specific pharmacy you have need. You can access whole list of open pharmacies and also access the path that carries you to the searched medical facilites.<h3 class="section-heading">- Hospitals</h3>All of the hospital information that you need comes within the Acil Sağlık app. If you want, you can create a path that involves a hospital nearby.<h3 class="section-heading">- Reminder</h3>Remembering the time of drugs can be a mess when you or your relative is using more than one or two drugs at a time. Each drug requires a different specific time and that can vary among similar drugs. With Acil Sağlık you can add or delete a drug and set a reminder for the drug you have selected from the complete list of drugs. Alarm will warn you when you need to take the drug.<h3 class="section-heading">- Contact Us</h3>Share your thoughts about the app, like and follow app's social accounts. Thank you for choosing our app. <h4 class="section-heading"><br> *** Acil Sağlık app has won the best application award at Pamukkale Technopark Hackerspace Hackathon in May 2015.</h4> <a target="_blank" href="https://play.google.com/store/apps/details?id=batunet.acilsaglik">Install now on GooglePlay</a> for your health </p>
-
-                    </div>
-                    <div class="col-md-7 vcenter">
-                        <img class="img-responsive" id="img_project" src="img/ipad.png" alt="">
-                    </div>
-                </div>
-                <div class="row vertical-align" >
-                    <div class="col-md-5 col-lg-offset-0 col-sm-6"  >
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading" font-family: "Arial">🕰 Anlik Haber</h2>
-                        <p class="lead" font-family: "Arial"> Need healthcare? No problem! Acil Sağlık is now with you in your smart phone…<br><br>Acil Sağlık shows the locations of open pharmacies, drugstores and hospitals on the map while drawing the closest path . Acil Sağlık provides the easiest and fastest access to health related services when you're in need.<h3 class="section-heading">- Reminder</h3>Remembering the time of drugs can be a mess when you or your relative is using more than one or two drugs at a time. Each drug requires a different specific time and that can vary among similar drugs. With Acil Sağlık you can add or delete a drug and set a reminder for the drug you have selected from the complete list of drugs. Alarm will warn you when you need to take the drug.<h3 class="section-heading">- Contact Us</h3>Share your thoughts about the app, like and follow app's social accounts. Thank you for choosing our app. <h4 class="section-heading"><br> *** Acil Sağlık app has won the best application award at Pamukkale Technopark Hackerspace Hackathon in May 2015.</h4> <a target="_blank" href="https://play.google.com/store/apps/details?id=batunet.acilsaglik">Install now on GooglePlay</a> for your health </p>
-
-                    </div>
-                    <div class="col-md-7 vcenter">
-                        <img class="img-responsive" id="img_project" src="img/anlik_haber.png" alt="">
-                    </div>
-                </div>
-
-                <div class="row vertical-align" >
-                    <div class="col-md-5 col-lg-offset-0 col-sm-6"  >
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading" font-family: "Arial">🛍 CottonBox App</h2>
-                        <p class="lead" font-family: "Arial"> Liven up your home with Cottonbox Android App<h3 class="section-heading">- HomePage</h3>Meticulously selected products, unique one from the other and details of the products you wish to can be 
-                            found in apps home page.<h3 class="section-heading">- Collections</h3>Eligible products to be reviewed according to your preference. Bathroom Group, Baby Group, Youth Group, 
-                            Bedroom Group are listed under collections tab.<h3 class="section-heading">- News</h3>To be informed of the current news and to feel the breeze of CottonBox use this tab.<h3 class="section-heading">- Press</h3>Media publications and product reviews about the CottonBox products are involved in this tab. <h3 class="section-heading">- CottonBox on Tv Series</h3>What if we have told you that the series you are a fan of are using CottonBox products? The series you love, 
-                            the products you adore. <h3 class="section-heading">- Catalog</h3>Heart touching product catalog with numerous product photos, informations and categories. Enjoy with our 
-                            products wherever you are after downloading the catalog to your smart-phone.<h3 class="section-heading">- Contact</h3>Follow our social media accounts without logging in. View our latest posts. Do you want to contact us? Do you 
-                            have a question? We are just a click far from you. <h3 class="section-heading">- Settings</h3>CottonBox App is different! Activate offline mode with this tab to access CottonBox content without Internet 
-                            wherever you are.<h4 class="section-heading"></h4> <a target="_blank" href="https://play.google.com/store/apps/details?id=batunet.cottonboxnav">Install now on GooglePlay</a></p>
-
-                        </div>
-                        <div class="col-md-7 vcenter">
-                            <img class="img-responsive" id="img_project" src="img/cotton.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="row vertical-align" >
-                        <div class="col-md-5 col-lg-offset-0 col-sm-6"  >
-                            <hr class="section-heading-spacer">
-                            <div class="clearfix"></div>
-                            <h2 class="section-heading" font-family: "Arial">🗺 Phrygian Way App</h2>
-                            <p class="lead" font-family: "Arial"> This app will guide you on the Phrygian Way, with maps, points of interest, accommodation places and many photos of the Phrygian Way.<h3 class="section-heading">Features:</h3>
-                                <br>-   GPS navigation for the Phrygian Way routes, which works without internet access;
-                                <br>-   Current location together with the remaining distance to your destination;
-                                <br>-   Points of interest are listed according to their distance and grouped by type (eg accommodation, natural features). Description and several photos for each point;
-                                <br>-   Plan your walks by choosing departure and arrival points and the app will guide you through your trip. Download only the maps you need for your chosen route.
-                                <br>-   To focus in fine detail on your current location, (ie. while you are using the trail) switch on the‘follow me’ option from the settings.<h4 class="section-heading"></h4><a target="_blank" href="https://play.google.com/store/apps/details?id=batunet.phrygianway">Install now on GooglePlay</a></p>
-
-                            </div>
-                            <div class="col-md-7 vcenter">
-                                <img class="img-responsive" id="img_min" src="img/frig.png" alt="">
-                            </div>
-                        </div>
-
-
-                           <div class="row vertical-align" >
-                        <div class="col-md-5 col-lg-offset-0 col-sm-6"  >
-                            <hr class="section-heading-spacer">
-                            <div class="clearfix"></div>
-                            <h2 class="section-heading" font-family: "Arial">🚍 Denizli Otobus Saatleri</h2>
-                            <p class="lead" font-family: "Arial"> Now, getting bus informations is more easier and convenient. This app showing bus time table for Denizli region in Turkey 
-                            <h3 class="section-heading" font-family: "Arial">☟ Don't miss the bus. Time is money...</h3>
-                              <h4 class="section-heading"></h4><a target="_blank" href="https://play.google.com/store/apps/details?id=com.denizli.otobussaatleri">Install now on GooglePlay</a></p>
-
-                            </div>
-                            <div class="col-md-7 vcenter">
-                                <img class="img-responsive" id="img_min" src="img/bus.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="row vertical-align" >
-                            <div class="col-md-5 col-lg-offset-0 col-sm-6"  >
-                                <hr class="section-heading-spacer">
-                                <div class="clearfix"></div>
-                                <h2 class="section-heading" font-family: "Arial">⚽️ Denizli Atatürk Stadium ScoreBoard Project</h2>
-                                <p class="lead" font-family: "Arial"><h3 class="section-heading">Overview</h3>
-                                    Thanks to our team's perseverance, the project which has good funcionality and visuality is actualized.The project is working on led panels( H: 6 meter W: 4 meter) These panels' total price is 210.000 Euro and they produced with high technology.
-                                    <br><br>System has been using with our software in Atatürk Stadium (Turkey/Denizli) since 2013-2014 season's entrance.<h4 class="section-heading"></h4></p>
-
-                                </div>
-                                <div class="col-md-7 vcenter">
-
-                                    <iframe src="https://www.youtube.com/embed/cFN8LIjv-yk" frameborder="0"></iframe>
-
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
-                        <!-- /.container -->
-
-                    </div>
-                    <!-- /.content-section-a -->
-
-                    <div class="content-section-b">
-
-                        <div class="container">
-
-                            <div class="row">
-                                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                                    <hr class="section-heading-spacer">
-                                    <div class="clearfix"></div>
-                                    <h2 class="section-heading">Designing & Mockups</h2>
-                                    <p class="lead"> Designing mockups and multiple device support screens.<br> I can design what you want with Adobe Photoshop, Fireworks and some mockups tools like proto.io </p>
-
-                                     <p class="lead"> Which device ?  which version ?  not important...</p>
-                                </div>
-                                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                                    <img class="img-responsive" src="img/dog.png" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- /.container -->
-
-                    </div>
-                    <!-- /.content-section-b -->
-
-                    <div class="content-section-a">
-
-                        <div class="container">
-
-                            <div class="row">
-                                <div class="col-lg-5 col-sm-6">
-                                    <hr class="section-heading-spacer">
-                                    <div class="clearfix"></div>
-                                    <h2 class="section-heading">Boring 'Default Fonts'?</h2>
-                                    <p class="lead">Using custom font which is fit for your design. Don't stuck around stock fonts!</p>
-                                </div>
-                                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                                    <img class="img-responsive" src="img/phones.png" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- /.container -->
-
-                    </div>
-                    <!-- /.content-section-a -->
-
-                    <a  name="contact"></a>
-                    <div class="banner">
-
-                        <div class="container">
-
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <h2>Contact with me:</h2>
-                                    <h4>onuryurtturk@gmail.com</h4>
-                                </div>
-                                <div class="col-lg-6">
-                                    <ul class="list-inline banner-social-buttons">
-                                        <li>
-                                            <a href="https://twitter.com/oyurtturk" class="btn btn-default btn-lg" target="_blank" ><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/onuryurtturk" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://tr.linkedin.com/in/onuryurtturk" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- /.container -->
-
-                    </div>
-                    <!-- /.banner -->
-
-                    <!-- Footer -->
-                    <footer>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <ul class="list-inline">
-                                        <li>
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li class="footer-menu-divider">&sdot;</li>
-                                        <li>
-                                            <a href="#about">About Me</a>
-                                        </li>
-                                        <li class="footer-menu-divider">&sdot;</li>
-                                        <li>
-                                            <a href="#services">References</a>
-                                        </li>
-                                        <li class="footer-menu-divider">&sdot;</li>
-                                        <li>
-                                            <a href="#contact">Contact</a>
-                                        </li>
-                                    </ul>
-                                    <p class="copyright text-muted small">Copyright &copy; 2016. All Rights Reserved</p>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-
-                    <!-- jQuery -->
-                    <script src="js/jquery.js"></script>
-
-                    <!-- Bootstrap Core JavaScript -->
-                    <script src="js/bootstrap.min.js"></script>
-
-                </body>
-
-                </html>
